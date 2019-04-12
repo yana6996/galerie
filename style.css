@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  height: 75px;
+  height: 100px;
   width: 100%;
   position: fixed;
   top: 0px;
@@ -28,8 +28,14 @@ header {
   padding-right: 30px;
 }
 
+main, footer{
+  position: relative;
+  top: 100px;
+}
+
 .main-visual img {
   width: 100%;
+  top: 100px;
 }
 
 .header-list li {

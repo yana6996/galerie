@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 li {
   list-style: none;
 }
@@ -8,7 +12,7 @@ body {
 }
 
 header {
-  height: 100px;
+  height: 75px;
   width: 100%;
   position: fixed;
   top: 0px;
@@ -28,10 +32,12 @@ header {
   padding-right: 30px;
 }
 
+/*
 main, footer{
   position: relative;
-  top: 100px;
+  top: 75px;
 }
+*/
 
 .main-visual img {
   width: 100%;

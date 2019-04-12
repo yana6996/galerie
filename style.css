@@ -1,0 +1,38 @@
+li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Batang';
+  font-size: 20px;
+}
+
+header {
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color:rgba(194, 167, 149, 0.5);
+  color: white;
+  z-index: 10;
+}
+
+.header-logo {
+  display: block;
+  float: left;
+  padding: 0px 10px;
+}
+
+.header-list ul {
+  float: right;
+  padding-right: 30px;
+}
+
+.main-visual img {
+  width: 100%;
+}
+
+.header-list li {
+  float: left;
+  margin: 15px;
+}

@@ -20,16 +20,21 @@ header {
   width: 100%;
   position: fixed;
   top: 0px;
-  background-color:rgba(194, 167, 149, 0.5);
+  left: 0px;
+  background-color:rgba(194, 167, 149, 0.8);
   color: white;
   z-index: 10;
+  box-shadow: 0px 1px 5px rgba(0,0,0, 0.5);
 }
 
 .header-logo {
-  display: block;
   float: left;
   padding-left: 30px;
   line-height: 75px;
+}
+
+.fa.menu-icon {
+  display: none;
 }
 
 .header-list ul {
@@ -42,35 +47,71 @@ header {
   margin-right: 30px;
 }
 
+.header-list a:hover {
+  color: rgb(119, 91, 38);
+  transition: all 1s;
+}
+
+.header-list a:active {
+  position: relative;
+  top: 3px;
+}
+
 .header-list a {
-  color: white;
+  color: rgb(255, 255, 255);
   padding-bottom: 5px;
   border-bottom: dotted 1px rgb(119, 91, 38);
-}
+}
 
 
 main, footer{
-  position: relative;
   top: 75px;
 }
 
 
-main {
+.main-contents {
   padding: 0px 30px;
+}
+
+.main-visual {
+  position: relative;
 }
 .main-visual img {
   width: 100%;
   top: 100px;
 }
 
-main h2 {
+.main-visual p {
+  position:absolute;
+  bottom: 70px;
+  left: 50px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(45, 29, 23, 0.7);
+}
+
+.main-contents h2 {
   font-size: 24px;
   padding-bottom: 5px;
   margin: 20px 0px;
   color: rgb(92, 92, 92);
   display: inline-block;
-  border-bottom: solid 2px rgb(92, 92, 92);
+  border-bottom: dashed 1px rgb(92, 92, 92);
 }
+
+.main-contents h2:before{
+    display:inline-block;
+    content:"\f030";
+    font-family: "Font Awesome 5 Free";
+    font-weight:900;
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+
+.main-contents h2:after {
+
+}
+
 
 footer {
   height: auto;

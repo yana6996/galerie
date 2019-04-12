@@ -1,0 +1,45 @@
+@media(min-width: 1000px) {
+  .main-visual p {
+    bottom: 100px;
+    left: 50px;
+    font-weight: 600;
+    font-size: 50px;
+    color: white;
+  }
+}
+
+@media(max-width: 500px) {
+
+  header {
+    text-align: left;
+  }
+
+  .header-list {
+    display: none;
+  }
+
+  .fa.menu-icon {
+    display: block;
+    color: white;
+    float: right;
+    font-size: 24px;
+    padding: 21px 0;
+    margin-right: 30px;
+  }
+  main {
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-visual p {
+    bottom: 50px;
+    left: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+  }
+
+  main h2 {
+    font-size: 18px;
+
+}

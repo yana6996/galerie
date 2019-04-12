@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css" integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <title>Document</title>
 </head>
 <body>
@@ -12,26 +16,30 @@
     <div class="header-logo">
       <h1>galerie</h1>
     </div>
+    <a href="#"><span class="fa fa-bars menu-icon"></span></a>
     <div class="header-list">
       <ul>
-        <li>profile</li>
-        <li>garally</li>
-        <li>contact</li>
+        <li><a href="#id_profile">profile</a></li>
+        <li><a href="#id_garally">garally</a></li>
+        <li><a href="#id_contact">contact</a></li>
       </ul>
     </div>
   </header>
   <main>
     <div class="main-visual">
+      <p>わたしだけの　きれいなものたち</p>
       <img src="image/mainVisual.jpg" alt="">
     </div>
-    <div class="profile">
-      <h2>profile</h2>
-    </div>
-    <div class="garally">
-      <h2>garally</h2>
-    </div>
-    <div class="contact">
-      <h2>contact</h2>
+    <div class="main-contents">
+      <div class="profile">
+        <h2 id="id_profile">profile</h2>
+      </div>
+      <div class="garally">
+        <h2 id="id_garally">garally</h2>
+      </div>
+      <div class="contact">
+        <h2 id="id_contact">contact</h2>
+      </div>
     </div>
   </main>
   <footer>
@@ -42,7 +50,9 @@
         <li>contact</li>
       </ul>
     </div>
-    <div class="footer-logo">galerie</div>
+    <div class="copyright">
+      <p>©️galerie</p>
+    </div>
   </footer>
 </body>
 </html>

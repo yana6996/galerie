@@ -11,6 +11,10 @@ body {
   font-size: 20px;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   height: 75px;
   width: 100%;
@@ -24,27 +28,65 @@ header {
 .header-logo {
   display: block;
   float: left;
-  padding: 0px 10px;
+  padding-left: 30px;
+  line-height: 75px;
 }
 
 .header-list ul {
   float: right;
-  padding-right: 30px;
+  line-height: 75px;
 }
 
-/*
+.header-list li {
+  float: left;
+  margin-right: 30px;
+}
+
+.header-list a {
+  color: white;
+  padding-bottom: 5px;
+  border-bottom: dotted 1px rgb(119, 91, 38);
+}
+
+
 main, footer{
   position: relative;
   top: 75px;
 }
-*/
 
+
+main {
+  padding: 0px 30px;
+}
 .main-visual img {
   width: 100%;
   top: 100px;
 }
 
-.header-list li {
+main h2 {
+  font-size: 24px;
+  padding-bottom: 5px;
+  margin: 20px 0px;
+  color: rgb(92, 92, 92);
+  display: inline-block;
+  border-bottom: solid 2px rgb(92, 92, 92);
+}
+
+footer {
+  height: auto;
+  width: 100%;
+  background-color: rgb(194, 167, 149);
+}
+
+.footer-list {
+}
+
+.footer-list li {
   float: left;
-  margin: 15px;
+  padding-right: 30px;
+}
+
+.copyright p{
+
+  text-align: center;
 }

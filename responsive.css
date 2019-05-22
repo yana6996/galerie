@@ -11,7 +11,13 @@
 @media(max-width: 500px) {
 
   header {
-    text-align: left;
+    height: 50px;
+
+  }
+  .header-logo {
+    padding-left: 15px;
+    line-height: 50px;
+    font-size: 14px;
   }
 
   .header-list {
@@ -23,14 +29,20 @@
     color: white;
     float: right;
     font-size: 24px;
-    padding: 21px 0;
-    margin-right: 30px;
+    /* padding: 21px 0; */
+    line-height: 50px;
+    margin-right: 15px;
   }
   main {
     padding: 0;
     margin: 0;
+    width: 100%;
   }
 
+  .main-visual {
+    margin-top: 50px;
+    height: 400px;
+  }
   .main-visual p {
     bottom: 50px;
     left: 25px;
@@ -38,8 +50,17 @@
     font-size: 16px;
     color: white;
   }
+  .main-visual-frame1 {
+    height: 20%;
+  }
 
-  main h2 {
+  .main-visual-frame2 {
+    height: 20%;
+  }
+
+
+  .profile h2, .garally h2, .contact h2 {
     font-size: 18px;
+
 
 }

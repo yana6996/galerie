@@ -3,7 +3,13 @@ $(function(){
   $('.slider').slick({
     autoplay: true,
     autoplaySpeed: 3000,
-    dots: true,
+    asNavFor: '.thumb',
+  });
+  $('.thumb').slick({
+    asNavFor: '.slider',
+    focusOnSelect: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
   });
 });
 

@@ -30,7 +30,7 @@ header {
 
 .header-logo {
   float: left;
-  padding-left: 30px;
+  padding-left: 20px;
   line-height: 75px;
 }
 
@@ -67,6 +67,12 @@ header {
 
 main{
   width: 100%;
+  text-align: center;
+}
+
+.main-border {
+  width: 20%;
+  margin-bottom: 15px;
 }
 
 .main-visual {
@@ -91,6 +97,13 @@ main{
 /* .main-visual-img {
   width: 100%;
 } */
+
+.main-visual-logo {
+  position: absolute;
+  width: 30%;
+  left: 50%;
+  top: 5%;
+}
 
 .main-visual-frame1 {
   position: absolute;
@@ -120,7 +133,7 @@ main{
 }
 
 .main-contents h2 {
-  font-size: 24px;
+  font-size: 30px;
   font-family: 'Homemade Apple', cursive;
   padding-bottom: 5px;
   text-align: center;
@@ -145,17 +158,39 @@ main{
 
 .contents {
   padding-bottom: 30px;
+  text-align: center;
+}
+
+.profile, .garally, .contact{
+  opacity : 0;
+  transform: translateY(20px);
+  transition: all 1s;
+}
+
+.prf_wrapper {
+  height: 700px;
+  background: linear-gradient( 0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1)),
+url(image/prf_back.jpg);
+  background-size: cover;
+  background-position: center bottom;
+
 }
 
 .slider {
   width: 100%;
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  filter: drop-shadow(4px 4px 5px rgba(45, 29, 23, 0.5));
 }
 
 .thumb {
   width: 30%;
   margin: 0 auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: rgb(92, 121, 138);
 }
 
 footer {
@@ -168,12 +203,17 @@ footer {
 
 .footer-list ul {
   text-align: center;
+  padding-top: 10px;
 }
 
 .footer-list li {
   padding-right: 30px;
   display: inline;
   color: white;
+}
+
+.footer-list li: {
+  background-color: rgb(112, 87, 73);
 }
 
 .copyright {

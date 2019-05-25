@@ -63,7 +63,11 @@
   }
 
   .profile h2, .garally h2, .contact h2 {
-    font-size: 18px;
+    font-size: 20px;
+  }
 
+  .footer-list {
+    display: none;
+  }
 
 }

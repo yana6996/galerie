@@ -7,7 +7,7 @@ li {
 }
 
 body {
-  font-family: 'Batang';
+  font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   font-size: 20px;
 }
 
@@ -78,7 +78,7 @@ main{
 .main-visual {
   position: relative;
   margin-top: 75px;
-  background-image: url("image/mainVisual.jpg");
+  background-image: linear-gradient(-90deg, rgba(208, 104, 166, 0.3), rgba(219, 251, 89, 0.3)),url("image/mainVisual.jpg");
   background-size: cover;
   background-position: center top;
   height: 700px;
@@ -90,6 +90,7 @@ main{
   position:absolute;
   bottom: 70px;
   left: 50px;
+  font-family: 'Batang';
   font-weight: bold;
   color: white;
   text-shadow: 2px 2px 5px rgba(45, 29, 23, 0.7);
@@ -128,9 +129,6 @@ main{
   margin: 0 auto;
 }
 
-#id_garally {
-
-}
 
 .main-contents h2 {
   font-size: 30px;
@@ -169,11 +167,18 @@ main{
 
 .prf_wrapper {
   height: 700px;
-  background: linear-gradient( 0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1)),
-url(image/prf_back.jpg);
+  /* background: linear-gradient( 0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1)),
+url(image/prf_back.jpg); */
   background-size: cover;
   background-position: center bottom;
 
+}
+
+.prf_wrapper img{
+  border-radius: 200px;
+  width: 30%;
+  margin: 30px 0 30px 0;
+  filter:drop-shadow(5px 5px 5px rgba(45, 29, 23, 0.3));
 }
 
 .slider {
@@ -193,7 +198,47 @@ url(image/prf_back.jpg);
     color: rgb(92, 121, 138);
 }
 
+form {
+  width: 500px;
+  display: inline-block;
+  text-align: left;
+}
+
+.form-control {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+  border: solid 1px rgb(164, 164, 164);
+}
+
+
+.submit-btn {
+  padding: 10px 30px;
+  background-color: rgb(58, 73, 98);
+  color: white;
+  width: 150px;
+  border: none;
+}
+
+.contact p {
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+::-webkit-input-placeholder {
+  color: #cbb993;
+}
+
+/* Firefox */
+::-moz-placeholder {
+  color: #cbb993;
+}
+
+
 footer {
+  width: 100%;
 }
 
 .footer-list {
@@ -217,7 +262,6 @@ footer {
 }
 
 .copyright {
-  width: 100%;
   height: 30px;
   background-color: rgb(194, 167, 149);
   padding: 10px;

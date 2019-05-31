@@ -34,15 +34,17 @@
       <!-- <img src="image/mainVisual.jpg" alt="mainVisual" class="main-visual-img"> -->
       <img src="image/frame_1.PNG" alt="frame1" class="main-visual-frame1">
       <img src="image/frame_2.PNG" alt="frame2" class="main-visual-frame2">
-      <img src="image/logo.png" alt="galerie" class="main-visual-logo">
-      <p>わたしだけの　きれいなものたち</p>
+      <!-- <img src="image/logo.png" alt="galerie" class="main-visual-logo"> -->
+      <p class="main-visual-subtitle">わたしだけの　きれいなものたち</p>
     </div>
     <div class="main-contents">
       <div class="contents profile">
         <img src="image/border.PNG" alt="border" class="main-border">
         <h2 id="id_profile">profile</h2>
         <div class="prf_wrapper">
-          <p>てすと</p>
+          <img src="image/profile_me.jpg">
+          <h3>うかわ　さちよ</h3>
+          <p>かけだしWebデザイナー</p>
         </div>
       </div>
       <div class="contents garally">
@@ -52,20 +54,25 @@
           <img src="image/mainVisual1.jpg" alt="mainVisual1">
           <img src="image/mainVisual2.jpg" alt="mainVisual2">
           <img src="image/mainVisual3.jpg" alt="mainVisual3">
+          <img src="image/mainVisual4.jpg" alt="mainVisual4">
         </div>
         <div class="thumb">
           <img src="image/mainVisual1.jpg" alt="mainVisual1">
           <img src="image/mainVisual2.jpg" alt="mainVisual2">
           <img src="image/mainVisual3.jpg" alt="mainVisual3">
+          <img src="image/mainVisual4.jpg" alt="mainVisual4">
         </div>
       </div>
       <div class="contents contact">
         <img src="image/border.PNG" alt="border" class="main-border">
         <h2 id="id_contact">contact</h2>
-        <p>このフォームはまだセキュリティ対策ができていないので機能しません…</p>
-        <p>Name</p><input type="text" name="name" value="">
-
-      </div>
+        <form action="#">
+          <input class="form-control" type="text" name="name" placeholder="お名前">
+          <input class="form-control" type="email" name="mail" placeholder="メールアドレス">
+          <textarea class="form-control" name="message" rows="8" cols="50" placeholder="メッセージをどうぞ"></textarea>
+          <div><input type="submit" class="submit-btn" value="送信"></div>
+          <p>※フォーム内容の送信は未実装です</p>
+        </form>
     </div>
   </main>
   <footer>
